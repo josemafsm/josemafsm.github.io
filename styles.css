@@ -1,0 +1,116 @@
+.bg-container {
+    overflow: hidden;
+    position: fixed;
+    /* left: 0;
+    top: 0; */
+    z-index: -1;
+}
+
+.start {
+  z-index: 1;
+}
+
+.start {
+  font-family: "Nata Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+  color:rgb(27, 15, 20);
+  text-shadow: 3px 3px #bb557ead;
+  z-index: 1 ;
+}
+
+.infinite-scrolling { 
+    background: url("../resources/heartPattern.png") repeat;
+    animation: slide 20s linear infinite; 
+}
+
+@keyframes slide {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-720px, 0, 0); /* The image width */
+  }
+}
+
+h1 {
+  position: relative;
+  z-index: 10;
+  /* background-color: rgba(255,255,255,0.8); */
+  /* padding: 10px; */
+  border-radius: 8px;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.);
+} 
+
+
+div {
+  left: 0;
+  top: 0;
+}
+
+body {
+    margin: 10%;
+  }
+  
+  .button-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10vh;
+  }
+  
+  .button {
+    background-color: #e01d37ee;
+    /* blue */
+    border: none;
+    color: white;
+    padding: 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+  
+  .button {
+    -webkit-transition-duration: 0.4s;
+    /* Safari */
+    transition-duration: 0.4s;
+  }
+  
+  .button:hover {
+    background-color: #e01d37;
+    color: white;
+    font-size: 20px;
+    padding: 40px;
+  }
+  
+  .button {
+    border-radius: 40px;
+  }
+
+  #fileInput {
+    display: none;
+  }
+
+  #uploadBtn {
+  opacity: 0;
+  transform: translateY(20px); /* Lo empuja un poco hacia abajo */
+  transition: opacity 0.6s ease-in, transform 0.6s ease-in;
+    display: none;
+}
+
+  #uploadBtn.show {
+  opacity: 1;
+  transform: translateY(0); /* Lo regresa a su lugar */
+}
+  /* 
+  4cbff24b116358f1b29a
+    .url-box {
+    margin-top: 30px;
+    background: #222;
+    padding: 10px;
+    border: 1px dashed #555;
+  } */
